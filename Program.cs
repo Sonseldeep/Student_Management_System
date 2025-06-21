@@ -74,7 +74,7 @@ public class StudentManager
             System.Console.WriteLine($"No students found with name: {name.Trim()}");
             return;
         }
-        System.Console.WriteLine("\n--- SEARCH RESULTS ---");
+        Console.WriteLine("\n--- SEARCH RESULTS ---");
         foreach (var student in results)
         {
             Console.WriteLine(student);
@@ -86,6 +86,24 @@ public class StudentManager
 
 }
 
+
+public static class InputHelper
+{
+    public static int ReadInt(string prompt)
+    {
+        while (true)
+        {
+            Console.WriteLine(prompt);
+            var input = Console.ReadLine();
+        }
+    }
+
+    public static string? ReadString(string prompt)
+    {
+        Console.WriteLine(prompt);
+        return Console.ReadLine();
+    }
+}
 public class StudentManagementSystem
 {
     public static void Main(string[] args)
