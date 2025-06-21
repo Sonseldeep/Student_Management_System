@@ -112,6 +112,10 @@ public static class InputHelper
 public class StudentManagementSystem
 {
 
+    private readonly StudentManager _studentManager = new();
+
+
+
 
 
     public static void Main(string[] args)
