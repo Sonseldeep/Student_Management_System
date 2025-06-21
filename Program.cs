@@ -54,8 +54,31 @@ public class StudentManager
     public void DeleteStudent(int id)
     {
         bool removed = _students.RemoveAll(s => s.Id == id) > 0;
-        System.Console.WriteLine(removed ? "Student with Id: {id} deleted successfully." : $"No student found with ID: {id}");
+        Console.WriteLine(removed ? "Student with Id: {id} deleted successfully." : $"No student found with ID: {id}");
 
+    }
+
+    public void SearchStudentsByName(string? name)
+    {
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            Console.WriteLine("please enter a valid name");
+            return;
+        }
+        var results = _students
+                               .Where(s => s.Name
+                               .Equals(name.Trim(), StringComparison.OrdinalIgnoreCase)).ToList();
+
+        if (results.Count == 0)
+        {
+            System.Console.WriteLine($"No students found with name: {name.Trim()}");
+            return;
+        }
+        System.Console.WriteLine("\n--- SEARCH RESULTS ---");
+        foreach (var student in results)
+        {
+            Console.WriteLine(student);
+        }
     }
 
 
