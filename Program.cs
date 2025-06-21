@@ -18,8 +18,8 @@ public class StudentManager
 
         _students.Add(new Student(_nextId++, fullName, grage));
         Console.WriteLine("Student added successfully.");
-
-        public void DisplayAllStudents()
+    }
+    public void DisplayAllStudents()
     {
         if (_students.Count == 0)
         {
@@ -28,7 +28,7 @@ public class StudentManager
         }
         foreach (var student in _students)
         {
-            System.Console.WriteLine(student);
+            Console.WriteLine(student);
         }
     }
 
@@ -51,7 +51,8 @@ public class StudentManager
 
     }
 
-}
+
+
 
 
 }
@@ -64,4 +65,3 @@ public class StudentManagementSystem
     }
 }
 
-}
