@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Compression;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 public record Student(int Id, string Name, string Grade);
@@ -30,6 +31,27 @@ public class StudentManager
             System.Console.WriteLine(student);
         }
     }
+
+    public void UpdateStudent(int id, string? newName, string? newGrade)
+    {
+        var index = _students.FindIndex(s => s.Id == id);
+        if (index == -1)
+        {
+            Console.WriteLine($"No student found with ID : {id}");
+            return;
+        }
+
+        var student = _students[index];
+        _students[index] = student with
+        {
+            Name = string.IsNullOrWhiteSpace(newName) ? student.Name : newName,
+            Grade = string.IsNullOrWhiteSpace(newGrade) ? student.Grade : newGrade
+        };
+        Console.WriteLine("Student updated successfully.");
+
+    }
+
+}
 
 
 }
