@@ -51,6 +51,12 @@ public class StudentManager
 
     }
 
+    public void DeleteStudent(int id)
+    {
+        bool removed = _students.RemoveAll(s => s.Id == id) > 0;
+        System.Console.WriteLine(removed ? "Student with Id: {id} deleted successfully." : $"No student found with ID: {id}");
+
+    }
 
 
 
