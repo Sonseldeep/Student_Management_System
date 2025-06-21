@@ -1,0 +1,15 @@
+/home/sonseldeep/Desktop/Student_Management_System/bin/Debug/net8.0/Student_Management_System
+/home/sonseldeep/Desktop/Student_Management_System/bin/Debug/net8.0/Student_Management_System.deps.json
+/home/sonseldeep/Desktop/Student_Management_System/bin/Debug/net8.0/Student_Management_System.runtimeconfig.json
+/home/sonseldeep/Desktop/Student_Management_System/bin/Debug/net8.0/Student_Management_System.dll
+/home/sonseldeep/Desktop/Student_Management_System/bin/Debug/net8.0/Student_Management_System.pdb
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/Student_Management_System.GeneratedMSBuildEditorConfig.editorconfig
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/Student_Management_System.AssemblyInfoInputs.cache
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/Student_Management_System.AssemblyInfo.cs
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/Student_Management_System.csproj.CoreCompileInputs.cache
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/Student_Management_System.sourcelink.json
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/Student_Management_System.dll
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/refint/Student_Management_System.dll
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/Student_Management_System.pdb
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/Student_Management_System.genruntimeconfig.cache
+/home/sonseldeep/Desktop/Student_Management_System/obj/Debug/net8.0/ref/Student_Management_System.dll
