@@ -126,6 +126,18 @@ public class StudentManagementSystem
 
 
 
+    private static void DisplayMenu()
+    {
+        Console.WriteLine("\n--- STUDENT MANAGEMENT SYSTEM ---");
+        Console.WriteLine("1. Add Student");
+        Console.WriteLine("2. View All Students");
+        Console.WriteLine("3. Update Student");
+        Console.WriteLine("4. Delete Student");
+        Console.WriteLine("5. Search Student by Name");
+        Console.WriteLine("6. Exit");
+    }
+
+
 
 
     public static void Main(string[] args)
