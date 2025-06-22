@@ -113,6 +113,16 @@ public class StudentManagementSystem
 {
 
     private readonly StudentManager _studentManager = new();
+    public void Run()
+    {
+        bool running = true;
+        while (running)
+        {
+            DisplayMenu();
+            int choice = InputHelper.ReadInt("Enter your choice: ");
+            running = HandleMenuChoice(choice);
+        }
+    }
 
 
 
